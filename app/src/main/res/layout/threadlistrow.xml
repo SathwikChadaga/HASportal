@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        app:cardElevation="6dp"
+        android:id="@+id/cardView1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bdc3c7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:weightSum="100"
+                android:visibility="visible"
+                android:layout_marginBottom="1dp">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/user_dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Football"
+                        android:id="@+id/threadSubject"
+                        android:textColor="#2980b9"
+                        android:textStyle="bold"
+                        android:maxLines = "2"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:text="location"
+                        android:textSize="16dp"
+                        android:maxLines = "4"
+                        android:id="@+id/threadBody" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:text="Mess Name"
+                        android:textSize="16dp"
+                        android:maxLines = "4"
+                        android:id="@+id/threadName" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="ce14b016"
+                        android:id="@+id/threadUser"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentBottom ="true"
+                        android:layout_alignParentRight ="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="5:30"
+                        android:id="@+id/threadTime"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentBottom ="true"
+                        android:layout_alignParentRight ="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="23-7-16"
+                        android:id="@+id/threadDate"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentBottom ="true"
+                        android:layout_alignParentRight ="true" />
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="23-7-16"
+                        android:id="@+id/thread_id"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentBottom ="true"
+                        android:layout_alignParentRight ="true"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mess and Facilities portal</string>
+    <string name="loading">Loading ...</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="url_complaint_post">https://students.iitm.ac.in/studentsapp/hasportal/post.php</string>
+    <string name="url_fetch_list">https://students.iitm.ac.in/studentsapp/hasportal/fetch.php?type1=</string>
+    <string name="url_get_messages">https://students.iitm.ac.in/studentsapp/hasportal/get_messages.php</string>
+    <string name="url_send_message">https://students.iitm.ac.in/studentsapp/hasportal/send_message.php</string>
+    <string name="url_get_threads">https://students.iitm.ac.in/studentsapp/hasportal/threads.php</string>
+    <string name="url_register_fcm">https://students.iitm.ac.in/studentsapp/hasportal/token_register.php</string>
+    <string name="LoginURl">https://students.iitm.ac.in/studentsapp/login/index.php</string>
+</resources>

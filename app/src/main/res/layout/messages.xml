@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<ListView
+        android:id="@+id/list_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listFooter"
+        android:layout_alignParentTop="true"
+        android:transcriptMode="alwaysScroll"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:id="@+id/listFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"
+            android:background="#bdc3c7"
+            android:minHeight="40dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Type a message"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="@drawable/bg_send"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:minHeight="40dp"
+            android:minWidth="40dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
